@@ -1,0 +1,38 @@
+<p>
+  user-component works!
+</p>
+
+<p>{{userReply}}</p>
+
+
+<ul *ngIf="this.userReply | async as x">
+  <li *ngFor="let user of x.users">
+    {{user.id}}
+    {{user.login}}
+    {{user.password}}
+    {{user.email}}
+  </li>
+</ul>    
+
+
+<form method="post">
+
+  <label>id</label>
+  <input type="text" name="id"><br>
+
+  <label>login</label>
+  <input type="text" name="login"><br>
+
+  <label>password</label>
+  <input type="text" name="password"><br>
+
+  <label>email</label>
+  <input type="text" name="email"><br>
+
+  <label>balance</label>
+  <input type="text" name="balance"><br>
+  
+  <label>role</label>
+  <input type="text" name="role">
+
+</form>

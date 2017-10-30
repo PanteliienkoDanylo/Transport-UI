@@ -1,0 +1,22 @@
+<!-- <div class="example-container mat-elevation-z1">
+  <md-table #table [dataSource]="dataSource">
+
+
+    <ng-container cdkColumnDef="name">
+      <md-header-cell *cdkHeaderCellDef> Name </md-header-cell>
+      <md-cell *cdkCellDef="let stations"> {{stations.name}} </md-cell>
+    </ng-container>
+
+    <md-header-row *cdkHeaderRowDef="displayedColumns"></md-header-row>
+    <md-row *cdkRowDef="let stations; columns: displayedColumns;"></md-row>
+  </md-table>
+</div> -->
+
+<h1>Stations</h1>
+<ul>
+  <li *ngFor="let station of stations | async">
+    {{station.id}}
+    {{station.name}}
+  </li>
+</ul>
+

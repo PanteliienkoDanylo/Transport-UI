@@ -1,0 +1,29 @@
+/* Structure */
+.example-container {
+    display: flex;
+    flex-direction: column;
+    max-height: 500px;
+    min-width: 300px;
+  }
+
+  .example-header {
+    min-height: 64px;
+    display: flex;
+    align-items: center;
+    padding-left: 24px;
+    font-size: 20px;
+  }
+
+  .mat-table {
+    overflow: auto;
+  }
+
+  app-routes h1{
+    background: red;
+    display: inline-block;
+    width: auto;
+  }
+
+  @media (max-width:1120px) {
+    width:100%;;
+  }

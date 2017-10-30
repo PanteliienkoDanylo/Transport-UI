@@ -1,0 +1,41 @@
+<!--The content below is only a placeholder and can be replaced.-->
+
+<div id="wp-screen" fxLayout="column" class="h-100 mh-100 w-100 mw-100">
+
+  <div id="wp-top" fxLayout="column" fxLayoutAlign="none stretch" fxFlex="3rem" style="background-color:springgreen">
+    <!-- TOP CONTENT -->
+  </div>
+
+  <div id="wp-body" fxLayout="row" fxFlex fxFill>
+
+    <div id="wp-left" fxFlex="0 0 20rem" style="background-color:blueviolet">
+      <!-- LEFT CONTENT -->
+      <app-routes></app-routes>
+    </div>
+
+    <div id="wp-center-right-bottom" fxFlex="1 1 auto" fxLayout="column">
+
+      <div id="wp-center-right" fxFlex="1 1 auto" fxLayout="row">
+
+        <div id="wp-center" fxFlex="1 1 auto" style="background-color:cornflowerblue">
+          <!-- CENTER CONTENT -->
+          <google-map></google-map>
+        </div>
+
+        <div id="wp-right" fxFlex="0 0 18rem" style="background-color:deeppink">
+          <!-- RIGHT CONTENT -->
+          <app-transport></app-transport>
+
+        </div>
+
+      </div>
+
+      <div id="wp-bottom" fxFlex="0 0 12rem">
+        <!-- BOTTOM CONTENT -->
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<router-outlet></router-outlet>

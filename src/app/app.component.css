@@ -1,0 +1,46 @@
+:host {
+display: flex;
+flex-direction: column;
+}
+
+:host #wp-screen {
+
+}
+
+:host #wp-top {
+
+}
+
+:host #wp-body {
+
+}
+
+:host #wp-left {
+overflow: hidden;
+}
+
+:host #wp-center-right-bottom {
+overflow: hidden;
+}
+
+:host #wp-center-right {
+overflow: hidden;
+}
+
+:host #wp-center {
+background-color: lightgray;
+}
+
+:host #wp-right {
+overflow: hidden;
+}
+
+:host #wp-bottom {
+overflow-x: auto;
+overflow-y: hidden;
+}
+
+body{
+  width: 100%;
+  background: red;
+}

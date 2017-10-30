@@ -1,0 +1,41 @@
+
+<h1>Routes</h1>
+<ul>
+  <li *ngFor="let route of routes | async"
+      (click)="onSelect(route)"
+      [class.clicked]="selectedRoute === route"
+  >
+    {{route.id}}
+    {{route.name}}
+    {{route.startTime | date:'HH:mm'}}
+    {{route.endTime | date:'HH:mm'}}
+  </li>
+</ul>
+<app-station [route] = "selectedRoute"></app-station>
+<app-transport [route] = "selectedRoute"></app-transport>
+
+<!-- <div class="example-container mat-elevation-z1">
+  <md-table #table [dataSource]="dataSource">
+
+
+    <ng-container cdkColumnDef="number">
+      <md-header-cell *cdkHeaderCellDef> Number </md-header-cell>
+      <md-cell *cdkCellDef="let routes"> {{routes.name}} </md-cell>
+    </ng-container>
+
+
+    <ng-container cdkColumnDef="startTime">
+      <md-header-cell *cdkHeaderCellDef> Start Time </md-header-cell>
+      <md-cell *cdkCellDef="let routes"> {{routes.startTime | date:'HH:mm'}} </md-cell>
+    </ng-container>
+
+
+    <ng-container cdkColumnDef="endTime">
+      <md-header-cell *cdkHeaderCellDef> End Time </md-header-cell>
+      <md-cell *cdkCellDef="let routes"> {{routes.endTime | date:'HH:mm'}} </md-cell>
+    </ng-container>
+
+    <md-header-row *cdkHeaderRowDef="displayedColumns"></md-header-row>
+    <md-row *cdkRowDef="let routes; columns: displayedColumns;"></md-row>
+  </md-table>
+</div> -->

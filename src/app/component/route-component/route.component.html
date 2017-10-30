@@ -1,0 +1,8 @@
+<div *ngIf="route">
+  <h2>{{route.name}} details!</h2>
+  <div><label>id: </label>{{route.id}}</div>
+  <div>
+    <label>route: </label>
+    <input [(ngModel)]="route.name" placeholder="name"/>
+  </div>
+</div>
